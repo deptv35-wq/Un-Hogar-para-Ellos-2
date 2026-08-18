@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Reportar mascota perdida</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f5f7f6;
+            color: #26332d;
+        }
+
+        header {
+            background: white;
+            padding: 20px;
+            text-align: center;
+            border-bottom: 1px solid #ddd;
+        }
+
+        header h1 {
+            font-size: 25px;
+        }
+
+        .contenedor {
+            max-width: 650px;
+            margin: 30px auto;
+            padding: 20px;
+        }
+
+        .formulario {
+            background: white;
+            padding: 25px;
+            border-radius: 18px;
+            box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+        }
+
+        h2 {
+            margin-bottom: 10px;
+        }
+
+        .introduccion {
+            color: #68736e;
+            margin-bottom: 25px;
+            line-height: 1.5;
+        }
+
+        label {
+            display: block;
+            margin-top: 18px;
+            margin-bottom: 7px;
+            font-weight: bold;
+        }
+
+        input,
+        select,
+        textarea {
+            width: 100%;
+            padding: 13px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            font-size: 16px;
+        }
+
+        textarea {
+            min-height: 110px;
+            resize: vertical;
+        }
+
+        .boton {
+            width: 100%;
+            margin-top: 25px;
+            padding: 16px;
+            border: none;
+            border-radius: 12px;
+            background: #26332d;
+            color: white;
+            font-size: 17px;
+            font-weight: bold;
+        }
+
+        .volver {
+            display: block;
+            text-align: center;
+            margin-top: 20px;
+            color: #26332d;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>🐾 Un Hogar Para Ellos</h1>
+</header>
+
+<div class="contenedor">
+
+    <div class="formulario">
+
+        <h2>🔎 Reportar una mascota perdida</h2>
+
+        <p class="introduccion">
+            Completá los datos de tu mascota. La información será revisada
+            antes de publicarse.
+        </p>
+
+        <form>
+
+            <label for="foto">📷 Foto de la mascota</label>
+            <input type="file" id="foto" accept="image/*">
+
+            <label for="tipo">🐾 Tipo de animal</label>
+            <select id="tipo">
+                <option>Perro</option>
+                <option>Gato</option>
+                <option>Otro</option>
+            </select>
+
+            <label for="nombre">🏷️ Nombre</label>
+            <input type="text" id="nombre" placeholder="Ej: Toby">
+
+            <label for="sexo">⚧️ Sexo</label>
+            <select id="sexo">
+                <option>Macho</option>
+                <option>Hembra</option>
+                <option>No sé</option>
+            </select>
+
+            <label for="edad">🎂 Edad aproximada</label>
+            <input type="text" id="edad" placeholder="Ej: 2 años">
+
+            <label for="color">🎨 Color y características</label>
+            <input type="text" id="color" placeholder="Ej: Negro, collar rojo">
+
+            <label for="zona">📍 ¿Dónde se perdió?</label>
+            <input type="text" id="zona" placeholder="Barrio o zona">
+
+            <label for="fecha">📅 Fecha en que se perdió</label>
+            <input type="date" id="fecha">
+
+            <label for="descripcion">📝 Descripción</label>
+            <textarea id="descripcion"
+                placeholder="Contanos cualquier detalle que pueda ayudar a encontrarlo..."></textarea>
+
+            <label for="contacto">📞 WhatsApp de contacto</label>
+            <input type="tel" id="contacto" placeholder="Ej: 3834...">
+
+            <button class="boton" type="submit">
+                📤 ENVIAR PUBLICACIÓN
+            </button>
+
+        </form>
+
+        <a class="volver" href="index.html">
+            ← Volver al inicio
+        </a>
+
+    </div>
+
+</div>
+
+</body>
+</html>
